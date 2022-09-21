@@ -20,7 +20,7 @@ function App() {
       document.getElementById("display").innerHTML = displayStr;
   }
 
-  function enableScanners(){
+  const enableScanners = () =>{
       console.info("-------> enabling....");
       //@ts-ignore
       EB.Barcode.enable({}, scanReceived);
