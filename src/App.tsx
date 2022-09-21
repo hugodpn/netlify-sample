@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import logo from './logo.svg';
+import  { useEffect } from 'react';
 import './App.css';
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
 
   function scanReceived(params:any){
       // No data or no timestamp, scan failed.
-      if(params['data']== "" || params['time']==""){
+      if(params['data'] === "" || params['time'] === ""){
           //@ts-ignore
           document.getElementById('display').innerHTML = "Failed!";
           return;
